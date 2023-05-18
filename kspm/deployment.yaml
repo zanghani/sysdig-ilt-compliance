@@ -27,3 +27,6 @@ spec:
             memory: 100Mi
         ports:
         - containerPort: 80
+        securityContext:
+          allowPrivilegeEscalation: false
+          runAsUser: 0
